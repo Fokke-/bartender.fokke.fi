@@ -25,6 +25,10 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/overview' },
     ],
+    editLink: {
+      pattern:
+        'https://github.com/Fokke-/bartender.fokke.fi/edit/master/docs/:path',
+    },
     sidebar: [
       {
         text: 'Guide',
