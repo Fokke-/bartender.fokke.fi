@@ -18,4 +18,4 @@ Bartender is a library for creating accessible off-canvas bars. Any number of ba
 ## Browser requirements
 
 - [\<dialog\> element](https://caniuse.com/dialog) must be supported
-- (optional) [transition-behavior: allow-discrete](https://caniuse.com/mdn-css_properties_content-visibility_transitionable) must be supported to enable bar transitions.
+- (optional) [transition-behavior: allow-discrete](https://caniuse.com/mdn-css_properties_display_is_transitionable) must be supported to enable bar transitions.
