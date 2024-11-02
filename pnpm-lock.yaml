@@ -12,8 +12,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1
       '@fokke-/vue-bartender.js':
-        specifier: link:../vue-bartender.js
-        version: link:../vue-bartender.js
+        specifier: 1.0.0
+        version: 1.0.0(@fokke-/bartender.js@3.1.1)(vue@3.5.12)
       vue:
         specifier: 3.5.12
         version: 3.5.12
@@ -272,6 +272,12 @@ packages:
 
   '@fokke-/bartender.js@3.1.1':
     resolution: {integrity: sha512-ojZjVIuixIG54/0iZJCdTRvAaCy4PZPCJ796P+IP5w689oJFIs+cAL9esJVipFx+LIVwvXvnvD9RMvivk0zN+A==}
+
+  '@fokke-/vue-bartender.js@1.0.0':
+    resolution: {integrity: sha512-B93/QteDR+fEqdyYnt51LVfyaABWAR1YNVKo5VNDOMJfT3r58LPquZHXhLt04FjpvyEoI8PNQiWajcK4ceA87g==}
+    peerDependencies:
+      '@fokke-/bartender.js': ^3.0.0
+      vue: ^3.5.0
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
@@ -1100,6 +1106,11 @@ snapshots:
     optional: true
 
   '@fokke-/bartender.js@3.1.1': {}
+
+  '@fokke-/vue-bartender.js@1.0.0(@fokke-/bartender.js@3.1.1)(vue@3.5.12)':
+    dependencies:
+      '@fokke-/bartender.js': 3.1.1
+      vue: 3.5.12
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
