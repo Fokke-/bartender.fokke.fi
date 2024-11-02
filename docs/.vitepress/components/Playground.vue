@@ -29,7 +29,7 @@
       <template v-if="props.switch === true">
         <h3>Switch to another bar</h3>
 
-        <div class="demo-button-list">
+        <div class="playground-button-list">
           <VPButton
             ref="currentBarButton"
             v-for="bar of bars.filter((item) => item.name !== bar.name)"
@@ -44,35 +44,38 @@
     </template>
   </BartenderBar>
   <div
-    :class="['demo', props.fullWidth === true ? 'demo--full-width' : undefined]"
+    :class="[
+      'playground',
+      props.fullWidth === true ? 'playground--full-width' : undefined,
+    ]"
   >
-    <h2 v-if="props.title" class="demo__title">{{ props.title }}</h2>
-    <div class="demo__wrap">
-      <div v-if="props.create === true" class="demo__col">
+    <h2 v-if="props.title" class="playground__title">{{ props.title }}</h2>
+    <div class="playground__wrap">
+      <div v-if="props.create === true" class="playground__col">
         <h2>Create a new bar</h2>
-        <form @submit.prevent="barFormSubmit" class="demo-form">
-          <div class="demo-field">
-            <label :for="`bar-name`" class="demo-label">Bar name</label>
+        <form @submit.prevent="barFormSubmit" class="playground-form">
+          <div class="playground-field">
+            <label :for="`bar-name`" class="playground-label">Bar name</label>
             <input
               v-model="newBarData.name"
-              class="demo-input demo-input--text"
+              class="playground-input playground-input--text"
               id="bar-name"
               type="text"
               required
               pattern="[a-zA-Z]+"
             />
-            <p class="demo-field__description">Letters only!</p>
+            <p class="playground-field__description">Letters only!</p>
           </div>
           <BarConfig v-model="newBarData" />
-          <div class="demo-field">
+          <div class="playground-field">
             <VPButton type="submit" size="medium" text="Create a new bar" />
           </div>
         </form>
       </div>
-      <div class="demo-bar-create__col">
+      <div class="playground-bar-create__col">
         <h2 v-if="props.create === true">Current bars</h2>
 
-        <div class="demo-button-list">
+        <div class="playground-button-list">
           <VPButton
             ref="currentBarButton"
             v-for="bar of bars"
@@ -186,17 +189,17 @@ onMounted(() => {
 </script>
 
 <style>
-.demo {
+.playground {
   container-type: inline-size;
   margin: 48px 0;
 }
 
-.demo__title {
+.playground__title {
   flex: 0 0 100%;
   text-align: center;
 }
 
-.demo--full-width {
+.playground--full-width {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -206,7 +209,7 @@ onMounted(() => {
   border-radius: 12px;
 }
 
-.demo__wrap {
+.playground__wrap {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -214,45 +217,45 @@ onMounted(() => {
 }
 
 @container (min-width: 500px) {
-  .demo__wrap {
+  .playground__wrap {
     flex-direction: row;
   }
 }
 
-.demo__col {
+.playground__col {
   flex: 0 0 50%;
 }
 
-.demo h2 {
+.playground h2 {
   border: 0;
   margin: 0 0 1em 0;
   padding-top: 0;
 }
 
-.demo-fieldset:first-child,
-.demo-field:first-child {
+.playground-fieldset:first-child,
+.playground-field:first-child {
   margin-top: 0;
 }
 
-.demo-fieldset {
+.playground-fieldset {
   margin-top: 1.5rem;
   border-color: var(--vp-local-search-result-border);
 }
 
-.demo-fieldset__legend {
+.playground-fieldset__legend {
   margin-left: 1rem;
 }
 
-.demo-fieldset__content {
+.playground-fieldset__content {
   padding: 1rem;
 }
 
-.demo-field {
+.playground-field {
   margin-top: 1.5rem;
 }
 
-.demo-field--radio,
-.demo-field--checkbox {
+.playground-field--radio,
+.playground-field--checkbox {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -260,17 +263,17 @@ onMounted(() => {
   margin-top: 0.75rem;
 }
 
-.demo-field__description {
+.playground-field__description {
   font-size: 0.85em;
   margin: 0 !important;
 }
 
-.demo-label {
+.playground-label {
   /* font-weight: bold; */
   display: block;
 }
 
-.demo-input--text {
+.playground-input--text {
   display: block;
   width: 100%;
   padding: 0.75em;
@@ -280,27 +283,27 @@ onMounted(() => {
   border-radius: 8px;
 }
 
-.demo-input--text:hover {
+.playground-input--text:hover {
   border-color: var(--vp-button-brand-hover-bg);
 }
 
-.demo-input--text:focus {
+.playground-input--text:focus {
   border-color: var(--vp-button-brand-active-bg);
 }
 
-.demo-input--radio,
-.demo-input--checkbox {
+.playground-input--radio,
+.playground-input--checkbox {
   margin: 0 0.5em 0 0;
   accent-color: var(--vp-button-brand-bg);
 }
 
-.demo-input--radio:focus-visible,
-.demo-input--checkbox:focus-visible {
+.playground-input--radio:focus-visible,
+.playground-input--checkbox:focus-visible {
   outline: solid 1px var(--vp-button-brand-active-bg);
   outline-offset: 3px;
 }
 
-.demo-button-list {
+.playground-button-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

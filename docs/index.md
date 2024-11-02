@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Bartender.js"
-  text: "Accessible off-canvas bars"
+  text: "Accessible off-canvas bars and modals"
   actions:
     - theme: brand
       text: Getting started
@@ -25,4 +25,10 @@ features:
     details: Looks nice enough out of the box though.
 ---
 
-<Demo title="Try it out!" full-width edit switch />
+<TryItOut>
+  <BasicLeftAlignedBar />
+  <CenteredDialog />
+  <FullScreenBar />
+  <CenteredFullScreenBar />
+  <BarWithAnimation />
+</TryItOut>

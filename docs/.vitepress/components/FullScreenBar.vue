@@ -1,21 +1,16 @@
 <template>
   <BartenderBar class="full-screen-bar" name="full-screen" position="top">
     <div class="full-screen-bar__content">
-      <h2>Isn't this a blast?</h2>
+      <h2>Full screen bar</h2>
 
-      <VPButton
-        type="submit"
-        size="medium"
-        text="Close it"
-        v-bartender-close="'full-screen'"
-      />
+      <VPButton type="submit" size="medium" text="Close it" v-bartender-close />
     </div>
   </BartenderBar>
 
   <VPButton
     type="submit"
     size="medium"
-    text="Try full screen bar"
+    text="Full screen bar"
     v-bartender-open="'full-screen'"
   />
 </template>
@@ -44,13 +39,13 @@ import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vu
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   font-weight: bold;
 }
 
 .full-screen-bar__content h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1.2;
   text-align: center;
   margin: 0 0 1em 0;

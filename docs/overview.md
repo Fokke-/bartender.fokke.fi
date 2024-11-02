@@ -1,6 +1,6 @@
 # Overview
 
-Bartender is a library for creating accessible off-canvas bars. Any number of bars is supported, and they can be located on any side of the viewport.
+Bartender is a library for creating accessible off-canvas bars and modals. Any number of bars is supported, and they can be located on any side of the viewport.
 
 ## Features
 

@@ -4,20 +4,15 @@
     name="centered-full-screen-bar"
     position="center"
   >
-    <h2>Isn't this a blast?</h2>
+    <h2>Centered full screen bar</h2>
 
-    <VPButton
-      type="submit"
-      size="medium"
-      text="Close it"
-      v-bartender-close="'centered-full-screen-bar'"
-    />
+    <VPButton type="submit" size="medium" text="Close it" v-bartender-close />
   </BartenderBar>
 
   <VPButton
     type="submit"
     size="medium"
-    text="Try centered full screen bar"
+    text="Centered full screen bar"
     v-bartender-open="'centered-full-screen-bar'"
   />
 </template>
@@ -37,7 +32,7 @@ import VPButton from 'vitepress/dist/client/theme-default/components/VPButton.vu
 }
 
 .centered-full-screen-bar h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 1.2;
   margin: 0 0 1em 0;
 }

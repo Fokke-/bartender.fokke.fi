@@ -130,7 +130,7 @@ You may want to define some global styles, which will apply to all the bars.
 }
 ```
 
-<DemoFullScreenBar />
+<FullScreenBar />
 
 ---
 
@@ -154,7 +154,7 @@ You may want to define some global styles, which will apply to all the bars.
 }
 ```
 
-<DemoCenteredFullScreenBar />
+<CenteredFullScreenBar />
 
 ---
 
@@ -204,4 +204,4 @@ In addition to transforms, you can also animate the bar with `--animation-*` pro
 }
 ```
 
-<DemoBarWithAnimation />
+<BarWithAnimation />

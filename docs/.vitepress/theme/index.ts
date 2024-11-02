@@ -7,10 +7,13 @@ import { createBartender, BartenderBar } from '@fokke-/vue-bartender.js'
 import '@fokke-/bartender.js/dist/bartender.css'
 import './style.css'
 import BarConfig from '../components/BarConfig.vue'
-import Demo from '../components/Demo.vue'
-import DemoFullScreenBar from '../components/DemoFullScreenBar.vue'
-import DemoCenteredFullScreenBar from '../components/DemoCenteredFullScreenBar.vue'
-import DemoBarWithAnimation from '../components/DemoBarWithAnimation.vue'
+import Playground from '../components/Playground.vue'
+import TryItOut from '../components/TryItOut.vue'
+import BasicLeftAlignedBar from '../components/BasicLeftAlignedBar.vue'
+import CenteredDialog from '../components/CenteredDialog.vue'
+import FullScreenBar from '../components/FullScreenBar.vue'
+import CenteredFullScreenBar from '../components/CenteredFullScreenBar.vue'
+import BarWithAnimation from '../components/BarWithAnimation.vue'
 
 export default {
   extends: DefaultTheme,
@@ -25,10 +28,13 @@ export default {
     app.use(bartender)
     app.component('BartenderBar', BartenderBar)
     app.component('BarConfig', BarConfig)
-    app.component('Demo', Demo)
-    app.component('DemoFullScreenBar', DemoFullScreenBar)
-    app.component('DemoCenteredFullScreenBar', DemoCenteredFullScreenBar)
-    app.component('DemoBarWithAnimation', DemoBarWithAnimation)
+    app.component('Playground', Playground)
+    app.component('TryItOut', TryItOut)
+    app.component('BasicLeftAlignedBar', BasicLeftAlignedBar)
+    app.component('CenteredDialog', CenteredDialog)
+    app.component('FullScreenBar', FullScreenBar)
+    app.component('CenteredFullScreenBar', CenteredFullScreenBar)
+    app.component('BarWithAnimation', BarWithAnimation)
     // ...
   },
 } satisfies Theme

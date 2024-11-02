@@ -1,22 +1,22 @@
 <template>
-  <fieldset class="demo-fieldset">
-    <legend class="demo-fieldset__legend">Position</legend>
-    <div class="demo-fieldset__content">
+  <fieldset class="playground-fieldset">
+    <legend class="playground-fieldset__legend">Position</legend>
+    <div class="playground-fieldset__content">
       <div
         v-for="option of barPositions"
         :key="option.value"
-        class="demo-field demo-field--radio"
+        class="playground-field playground-field--radio"
       >
         <input
           :id="`${modelValue.name}-position-${option.value}`"
-          class="demo-input demo-input--radio"
+          class="playground-input playground-input--radio"
           v-model="modelValue.position"
           type="radio"
           :name="`${modelValue.name}-position`"
           :value="option.value"
         />
         <label
-          class="demo-check-label"
+          class="playground-check-label"
           :for="`${modelValue.name}-position-${option.value}`"
         >
           {{ option.label }}
@@ -24,42 +24,51 @@
       </div>
     </div>
   </fieldset>
-  <fieldset class="demo-fieldset">
-    <legend class="demo-fieldset__legend">Options</legend>
-    <div class="demo-fieldset__content">
-      <div class="demo-field demo-field--checkbox">
+  <fieldset class="playground-fieldset">
+    <legend class="playground-fieldset__legend">Options</legend>
+    <div class="playground-fieldset__content">
+      <div class="playground-field playground-field--checkbox">
         <input
           :id="`${modelValue.name}-overlay`"
-          class="demo-input demo-input--checkbox"
+          class="playground-input playground-input--checkbox"
           v-model="modelValue.overlay"
           type="checkbox"
           name="overlay"
         />
-        <label class="demo-check-label" :for="`${modelValue.name}-overlay`">
+        <label
+          class="playground-check-label"
+          :for="`${modelValue.name}-overlay`"
+        >
           Overlay
         </label>
       </div>
-      <div class="demo-field demo-field--checkbox">
+      <div class="playground-field playground-field--checkbox">
         <input
           :id="`${modelValue.name}-permanent`"
-          class="demo-input demo-input--checkbox"
+          class="playground-input playground-input--checkbox"
           v-model="modelValue.permanent"
           type="checkbox"
           name="permanent"
         />
-        <label class="demo-check-label" :for="`${modelValue.name}-permanent`">
+        <label
+          class="playground-check-label"
+          :for="`${modelValue.name}-permanent`"
+        >
           Permanent
         </label>
       </div>
-      <div class="demo-field demo-field--checkbox">
+      <div class="playground-field playground-field--checkbox">
         <input
           :id="`${modelValue.name}-scrollTop`"
-          class="demo-input demo-input--checkbox"
+          class="playground-input playground-input--checkbox"
           v-model="modelValue.scrollTop"
           type="checkbox"
           name="scrollTop"
         />
-        <label class="demo-check-label" :for="`${modelValue.name}-scrollTop`">
+        <label
+          class="playground-check-label"
+          :for="`${modelValue.name}-scrollTop`"
+        >
           Scroll to the top
         </label>
       </div>
@@ -93,5 +102,3 @@ const modelValue = defineModel<Bar>({
   }),
 })
 </script>
-
-<style lang="scss"></style>
