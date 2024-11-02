@@ -17,11 +17,14 @@ features:
   - icon: 🍻
     title: Any number of bars
     details: Add any number of bars to any side of the viewport. Multiple bars can be open simultaneously.
+  - icon: 🥰
+    title: Accessible
+    details: The use of dialog elements provides native accessibility.
   - icon: 📦
     title: Typed lightweight API with zero dependencies
     details: Integrable to the frameworks.
   - icon: 🎨
-    title: Easily stylable transitions
+    title: Easily stylable
     details: Looks nice enough out of the box though.
 ---
 

@@ -16,7 +16,7 @@
     "vitepress": "^1.4.3"
   },
   "dependencies": {
-    "@fokke-/bartender.js": "3.1.1",
+    "@fokke-/bartender.js": "3.1.2",
     "@fokke-/vue-bartender.js": "1.0.0",
     "vue": "3.5.12"
   }
