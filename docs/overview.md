@@ -8,7 +8,7 @@ Bartender is a library for creating accessible off-canvas bars and modals. Any n
 - Multiple bars can be open simultaneously
 - Bar properties, such as position can be changed on the fly
 - Easily stylable with CSS custom properties
-- Typed lightweight API with zero dependencies
+- Typed lightweight API with zero dependencies. [Check package size](https://bundlephobia.com/package/@fokke-/bartender.js).
 
 ## Accessibility
 
