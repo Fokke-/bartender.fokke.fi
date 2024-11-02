@@ -160,7 +160,7 @@ button:hover {
 
 .bartender-bar {
   padding: 2rem;
-  background: var(--vp-sidebar-bg-color);
+  background: var(--vp-c-bg);
 }
 
 .bartender-bar h2 {
