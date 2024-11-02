@@ -83,6 +83,7 @@ const barPositions = ref<BarPosition[]>([
   { label: 'Right', value: 'right' },
   { label: 'Top', value: 'top' },
   { label: 'Bottom', value: 'bottom' },
+  { label: 'Center', value: 'center' },
 ])
 
 const modelValue = defineModel<Bar>({

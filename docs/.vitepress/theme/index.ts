@@ -9,7 +9,7 @@ import './style.css'
 import BarConfig from '../components/BarConfig.vue'
 import Demo from '../components/Demo.vue'
 import DemoFullScreenBar from '../components/DemoFullScreenBar.vue'
-import DemoFullScreenBarWithScale from '../components/DemoFullScreenBarWithScale.vue'
+import DemoCenteredFullScreenBar from '../components/DemoCenteredFullScreenBar.vue'
 import DemoBarWithAnimation from '../components/DemoBarWithAnimation.vue'
 
 export default {
@@ -27,7 +27,7 @@ export default {
     app.component('BarConfig', BarConfig)
     app.component('Demo', Demo)
     app.component('DemoFullScreenBar', DemoFullScreenBar)
-    app.component('DemoFullScreenBarWithScale', DemoFullScreenBarWithScale)
+    app.component('DemoCenteredFullScreenBar', DemoCenteredFullScreenBar)
     app.component('DemoBarWithAnimation', DemoBarWithAnimation)
     // ...
   },

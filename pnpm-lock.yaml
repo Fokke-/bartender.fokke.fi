@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fokke-/bartender.js':
-        specifier: 3.0.0-beta.13
-        version: 3.0.0-beta.13
+        specifier: 3.1.1
+        version: 3.1.1
       '@fokke-/vue-bartender.js':
         specifier: link:../vue-bartender.js
         version: link:../vue-bartender.js
@@ -19,8 +19,8 @@ importers:
         version: 3.5.12
     devDependencies:
       vitepress:
-        specifier: ^1.4.2
-        version: 1.4.2(@algolia/client-search@4.24.0)(postcss@8.4.47)(search-insights@2.17.2)
+        specifier: ^1.4.3
+        version: 1.4.3(@algolia/client-search@4.24.0)(postcss@8.4.47)(search-insights@2.17.2)
 
 packages:
 
@@ -267,8 +267,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fokke-/bartender.js@3.0.0-beta.13':
-    resolution: {integrity: sha512-FzoGmMau69VSD5Nbn7hh2vRhYrVM90Hb7jQSR09wN6VTvWG/ZZfoJuXCtJRnTpTnTeHBGOFFLVH52MY+LUAKAg==}
+  '@fokke-/bartender.js@3.1.1':
+    resolution: {integrity: sha512-ojZjVIuixIG54/0iZJCdTRvAaCy4PZPCJ796P+IP5w689oJFIs+cAL9esJVipFx+LIVwvXvnvD9RMvivk0zN+A==}
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
@@ -718,8 +718,8 @@ packages:
       terser:
         optional: true
 
-  vitepress@1.4.2:
-    resolution: {integrity: sha512-10v92Lqx0N4r7YC3cQLBvu+gRS2rHviE7vgdKiwlupUGfSWkyiQDqYccxM5iPStDGSi1Brnec1lf+lmhaQcZXw==}
+  vitepress@1.4.3:
+    resolution: {integrity: sha512-956c2K2Mr0ubY9bTc2lCJD3g0mgo0mARB1iJC/BqUt4s0AM8Wl60wSU4zbFnzV7X2miFK1XJDKzGZnuEN90umw==}
     hasBin: true
     peerDependencies:
       markdown-it-mathjax3: ^4
@@ -964,7 +964,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@fokke-/bartender.js@3.0.0-beta.13': {}
+  '@fokke-/bartender.js@3.1.1': {}
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
@@ -1444,7 +1444,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitepress@1.4.2(@algolia/client-search@4.24.0)(postcss@8.4.47)(search-insights@2.17.2):
+  vitepress@1.4.3(@algolia/client-search@4.24.0)(postcss@8.4.47)(search-insights@2.17.2):
     dependencies:
       '@docsearch/css': 3.6.2
       '@docsearch/js': 3.6.2(@algolia/client-search@4.24.0)(search-insights@2.17.2)

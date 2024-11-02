@@ -29,13 +29,13 @@ const bartender = new Bartender(
 
 ### Default options for new bars
 
-| Property  | Type                                     | Default  | Description                                                     |
-| --------- | ---------------------------------------- | -------- | --------------------------------------------------------------- |
-| position  | `'left' \| 'right' \| 'top' \| 'bottom'` | `'left'` | Bar position                                                    |
-| modal     | `boolean`                                | `true`   | Open bar as a modal?                                            |
-| overlay   | `boolean`                                | `true`   | Show overlay shading over the content when bar is open?         |
-| permanent | `boolean`                                | `false`  | Bar is not closeable by clicking overlay of pressing `esc` key. |
-| scrollTop | `boolean`                                | `true`   | Bar will be scrolled to top after opening it.                   |
+| Property  | Type                                                 | Default  | Description                                                     |
+| --------- | ---------------------------------------------------- | -------- | --------------------------------------------------------------- |
+| position  | `'left' \| 'right' \| 'top' \| 'bottom' \| 'center'` | `'left'` | Bar position                                                    |
+| modal     | `boolean`                                            | `true`   | Open bar as a modal?                                            |
+| overlay   | `boolean`                                            | `true`   | Show overlay shading over the content when bar is open?         |
+| permanent | `boolean`                                            | `false`  | Bar is not closeable by clicking overlay of pressing `esc` key. |
+| scrollTop | `boolean`                                            | `true`   | Bar will be scrolled to top after opening it.                   |
 
 ## destroy()
 

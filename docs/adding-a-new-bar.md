@@ -43,7 +43,7 @@ bartender.addBar('mobileNav', {
 | Property  | Type                                     | Default  | Description                                                     |
 | --------- | ---------------------------------------- | -------- | --------------------------------------------------------------- |
 | el        | `string \| element`                      |          | Bar element as selector string or reference to the element.     |
-| position  | `'left' \| 'right' \| 'top' \| 'bottom'` | `'left'` | Bar position                                                    |
+| position  | `'left' \| 'right' \| 'top' \| 'bottom' \| 'center'` | `'left'` | Bar position                                                    |
 | modal     | `boolean`                                | `true`   | Open bar as a modal?                                            |
 | overlay   | `boolean`                                | `true`   | Show overlay shading over the content when bar is open?         |
 | permanent | `boolean`                                | `false`  | Bar is not closeable by clicking overlay of pressing `esc` key. |

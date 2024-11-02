@@ -134,39 +134,27 @@ You may want to define some global styles, which will apply to all the bars.
 
 ---
 
-### Full screen bar with scaling effect
-
-Even though bar is located on the side of the viewport, we can use `--transform-leave` property to make it appear from the center.
+### Centered full screen bar
 
 ```javascript
 // Bar config
 {
-  overlay: false,
+  position: center,
 }
 ```
 
 ```css
-.full-screen-bar-with-scale {
-  --width: 100dvw;
-  --width-fallback: 100vw;
-  --max-width: 100dvw;
-  --max-width-fallback: 100vw;
-  --height: 100dvh;
-  --height-fallback: 100vh;
-  --max-height: 100dvh;
-  --max-height-fallback: 100vh;
-  --opacity-enter: 1;
-  --opacity-leave: 0;
+.centered-full-screen-bar {
+  --overlay-opacity: 0.85;
   --transition-duration-enter: 500ms;
   --transition-duration-leave: 250ms;
-  --transform-leave: scale(1.25);
+  text-align: center;
   color: #fff;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(5px);
+  background: transparent;
 }
 ```
 
-<DemoFullScreenBarWithScale />
+<DemoCenteredFullScreenBar />
 
 ---
 
