@@ -9,6 +9,25 @@ export default defineConfig({
     hostname: 'https://bartender.fokke.fi',
     lastmodDateOnly: false,
   },
+  cleanUrls: true,
+  transformPageData(pageData) {
+    const path = pageData.relativePath
+      .replace(/index\.md$/, '')
+      .replace(/\.(md|html)$/, '')
+
+    const canonicalUrl = [
+      `https://bartender.fokke.fi`,
+      path ? `/${path}` : undefined,
+    ]
+      .filter((item) => !!item)
+      .join('')
+
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push([
+      'link',
+      { rel: 'canonical', href: canonicalUrl },
+    ])
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: {

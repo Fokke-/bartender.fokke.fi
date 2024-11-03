@@ -21,7 +21,7 @@ npm i @fokke-/vue-bartender.js
 
 You need to enable the plugin to initialize the library and set up the directives.
 
-Pass [main options](/main-instance.html#main-options) and [default options for new bars](/main-instance.html#default-options-for-new-bars) as arguments to the `createBartender()` function.
+Pass [main options](/main-instance#main-options) and [default options for new bars](/main-instance#default-options-for-new-bars) as arguments to the `createBartender()` function.
 
 ```js
 // In entry file (e.g. main.js)
@@ -61,7 +61,7 @@ app.use(bartender)
 
 ### Props
 
-Define [bar options](/adding-a-new-bar.html#bar-options) as props.
+Define [bar options](/adding-a-new-bar#bar-options) as props.
 
 ```html
 <BartenderBar
