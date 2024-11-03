@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Bartender.js',
-  description: 'Library for creating accessible off-canvas bars.',
+  description: 'Library for creating accessible off-canvas bars and modals.',
   lastUpdated: true,
   sitemap: {
     hostname: 'https://bartender.fokke.fi',

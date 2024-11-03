@@ -1,5 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
+title: Accessible off-canvas bars and modals
 layout: home
 
 hero:
