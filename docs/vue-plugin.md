@@ -3,7 +3,7 @@
 This package contains Vue 3 plugin, providing an easy way to use the library in your Vue application.
 
 - Add bars using `<BartenderBar>` component
-- Interact with the library with directives or scoped slot
+- Interact with the library with [directives](#directives) or [scoped slots](#slots)
 - Full access to the API via composable
 
 ## Requirements
@@ -98,10 +98,14 @@ Define [bar options](/adding-a-new-bar#bar-options) as props.
 </BartenderBar>
 ```
 
-### Default slot
+### Slots
 
-| Binding  | Description                                        |
-| -------- | -------------------------------------------------- |
+#### \#default
+
+Default slot for bar content.
+
+| Binding    | Description                                        |
+| ---------- | -------------------------------------------------- |
 | `open()`   | Open another bar by calling `Bartender.open()`     |
 | `toggle()` | Toggle another bar by calling `Bartender.toggle()` |
 | `close()`  | Close this bar                                     |
@@ -118,10 +122,35 @@ Define [bar options](/adding-a-new-bar#bar-options) as props.
 </BartenderBar>
 ```
 
+#### \#activator <Badge type="tip" text="1.1+" />
+
+Contents of this slot will be rendered outside the bar.
+You can use this slot to render a button that is used to open the bar.
+
+| Binding    | Description     |
+| ---------- | --------------- |
+| `open()`   | Open this bar   |
+| `toggle()` | Toggle this bar |
+
+```html
+<BartenderBar name="myDialog" position="center">
+  <template #activator="{ open }">
+    <button type="button" @click="open()">
+      Open dialog
+    </button>
+  </template>
+  <template #default>
+    <p>Hello!</p>
+  </template>
+</BartenderBar>
+```
+
 ### Exposes
 
-| Property | Description       |
-| -------- | ----------------- |
+| Property   | Description       |
+| ---------- | ----------------- |
+| `open()`   | Open this bar     |
+| `toggle()` | Toggle this bar   |
 | `close()`  | Close this bar    |
 | `focus()`  | Focus to this bar |
 
@@ -136,8 +165,8 @@ Define [bar options](/adding-a-new-bar#bar-options) as props.
 
   const mobileNav = useTemplateRef('mobileNav')
 
-  const focusToMobileNav = () => {
-    mobileNav.value?.focus()
+  const openMobileNav = () => {
+    mobileNav.value?.open()
   }
 
   const closeMobileNav = () => {
