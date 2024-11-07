@@ -29,10 +29,9 @@ For example, if we want to set bar max-width to `50dvw`, we need to style it lik
   --max-width-fallback: 50vw;
 }
 
-// Fixed values still need the fallback
+// Without fallbacks
 .mobileNav {
   --max-width: 500px;
-  --max-width-fallback: 500px;
 }
 ```
 
