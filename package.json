@@ -12,12 +12,12 @@
   "author": "Ville Fokke Saarivaara",
   "license": "MIT",
   "devDependencies": {
-    "sass": "^1.80.6",
-    "vitepress": "^1.4.3"
+    "sass": "^1.89.1",
+    "vitepress": "^1.6.3",
+    "vue": "3.5.16"
   },
   "dependencies": {
     "@fokke-/bartender.js": "3.1.2",
-    "@fokke-/vue-bartender.js": "1.0.0",
-    "vue": "3.5.12"
+    "@fokke-/vue-bartender.js": "1.0.0"
   }
 }

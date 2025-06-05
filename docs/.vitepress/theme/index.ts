@@ -2,7 +2,7 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { Bartender } from '@fokke-/bartender.js'
+import Layout from './Layout.vue'
 import { createBartender, BartenderBar } from '@fokke-/vue-bartender.js'
 import '@fokke-/bartender.js/dist/bartender.css'
 import './style.css'
@@ -18,7 +18,7 @@ import BarWithAnimation from '../components/BarWithAnimation.vue'
 export default {
   extends: DefaultTheme,
   Layout: () => {
-    return h(DefaultTheme.Layout, null, {
+    return h(Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },

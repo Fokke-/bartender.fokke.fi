@@ -95,6 +95,10 @@ export default defineConfig({
         link: 'https://www.npmjs.com/package/@fokke-/bartender.js',
       },
       { icon: 'github', link: 'https://github.com/Fokke-/bartender.js' },
+      {
+        icon: 'githubsponsors',
+        link: 'https://github.com/sponsors/Fokke-',
+      },
     ],
     footer: {
       message: 'Released under the MIT License.',

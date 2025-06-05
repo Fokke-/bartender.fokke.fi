@@ -15,7 +15,6 @@ are defined by using [CSS custom properties](https://developer.mozilla.org/en-US
 Note that all transitions are disabled if user prefers reduced motion.
 :::
 
-
 ## Width and height with fallbacks
 
 Width and height related properties have fallback properties, as some browsers don't support `dvw` or `dvh` units.
