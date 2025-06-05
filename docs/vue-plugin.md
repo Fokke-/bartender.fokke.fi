@@ -77,13 +77,13 @@ Define [bar options](/adding-a-new-bar#bar-options) as props.
 
 ### Emits
 
-| Event        | Value                |
-| ------------ | -------------------- |
-| updated      | `event: CustomEvent` |
-| before-open  | `event: CustomEvent` |
-| after-open   | `event: CustomEvent` |
-| before-close | `event: CustomEvent` |
-| after-close  | `event: CustomEvent` |
+| Event        | Value                             |
+| ------------ | --------------------------------- |
+| updated      | `event: BartenderBarUpdatedEvent` |
+| before-open  | `event: BartenderBarEvent`        |
+| after-open   | `event: BartenderBarEvent`        |
+| before-close | `event: BartenderBarEvent`        |
+| after-close  | `event: BartenderBarEvent`        |
 
 ```html
 <BartenderBar
@@ -135,9 +135,7 @@ You can use this slot to render a button that is used to open the bar.
 ```html
 <BartenderBar name="myDialog" position="center">
   <template #activator="{ open }">
-    <button type="button" @click="open()">
-      Open dialog
-    </button>
+    <button type="button" @click="open()">Open dialog</button>
   </template>
   <template #default>
     <p>Hello!</p>
